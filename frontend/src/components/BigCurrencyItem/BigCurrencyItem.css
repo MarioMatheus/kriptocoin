@@ -1,0 +1,51 @@
+.Container {
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px #d8d8d8;
+  padding: 1px;
+}
+
+.RowContent {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RowContent .Name {
+  font-size: 1.4em;
+  margin-left: 32px;
+}
+
+.RowContent .Symbol {
+  font-size: 1.4em;
+  margin-right: 32px;
+}
+
+.Name {
+  font-weight: bold;
+}
+
+.Symbol {
+  font-style: italic;
+}
+
+.RowContent .Price {
+  font-size: 1em;
+  color: gray;
+}
+
+.RowContent .Rank {
+  font-size: 1em;
+  color: gray;
+  font-style: italic;
+}
+
+.Price {
+  margin-left: 32px;
+}
+
+.Rank {
+  margin-right: 32px;
+}
