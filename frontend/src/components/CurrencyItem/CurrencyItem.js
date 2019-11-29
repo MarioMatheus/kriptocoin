@@ -1,8 +1,8 @@
 import React from 'react'
-import './BigCurrencyItem.css'
+import './CurrencyItem.css'
 
 
-export const BigCurrencyItem = (props) => (
+export const CurrencyItem = (props) => (
   <article className="Container">
     <section className="RowContent">
       <div className="Name"> {props.currency.name} </div>
