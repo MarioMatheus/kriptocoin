@@ -94,7 +94,7 @@ export default class CurrencyList extends Component {
   render() {
     const currencies = this.state.currencies
     return (
-      <div>
+      <div className="CurrencyListContainer">
         {currencies.map(c => (
           <div className="Item" key={c.id} >
             <CurrencyItem currency={c} />
