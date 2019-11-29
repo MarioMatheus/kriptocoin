@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { CurrencyItem } from './components/CurrencyItem/CurrencyItem';
+// import { CurrencyItem } from './components/CurrencyItem/CurrencyItem';
+import CurrencyList from './components/CurrenciesList/CurrencyList';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <header className="App-header">
           Kriptocoin
       </header>
-      <article>
-        <CurrencyItem currency={{ name: 'Bitcoin', price_usd: 7553.9366313, rank: 1, symbol: 'BTC' }}/>
+      <article className="BiggestList">
+        <h3>Top 10</h3>
+        <CurrencyList />
       </article>
     </div>
   );
