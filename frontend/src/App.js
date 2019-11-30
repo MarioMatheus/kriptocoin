@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import CurrencyList from './components/CurrenciesList/CurrencyList';
-import SearchInput from './components/SearchInput/SearchInput';
-import { CurrencyCard } from './components/CurrencyCard/CurrencyCard';
+import CurrencySearch from './components/CurrencySearch/CurrencySearch';
 
 
 function App() {
@@ -16,8 +15,7 @@ function App() {
         <CurrencyList />
       </section>
       <section>
-        <SearchInput />
-        <CurrencyCard />
+        <CurrencySearch />
       </section>
     </div>
   );
