@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './SearchInput.css'
 
 export default class SearchInput extends Component {
 
