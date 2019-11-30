@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-// import { CurrencyItem } from './components/CurrencyItem/CurrencyItem';
 import CurrencyList from './components/CurrenciesList/CurrencyList';
+import SearchInput from './components/SearchInput/SearchInput';
+
 
 function App() {
   return (
@@ -9,10 +10,13 @@ function App() {
       <header className="App-header">
           Kriptocoin
       </header>
-      <article className="BiggestList">
+      <section className="BiggestList">
         <h3>Top 10</h3>
         <CurrencyList />
-      </article>
+      </section>
+      <section>
+        <SearchInput />
+      </section>
     </div>
   );
 }
