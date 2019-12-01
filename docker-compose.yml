@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - 3001:80
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - 8081:3000
+    links:
+      - backend
+
