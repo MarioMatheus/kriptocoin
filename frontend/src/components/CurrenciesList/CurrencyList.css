@@ -1,11 +1,8 @@
 .CurrencyListContainer {
-  height: 75vh;
+  height: 100%;
   overflow-y: auto;
-  padding: 5px;
-  border: black;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 12px;
+  padding: 25px;
+  background-color: #5930AF;
 }
 
 .Item {

@@ -25,7 +25,9 @@ export const CurrencyCard = (props) => (
             <p className="Info"> BTC$ {props.currency.price_btc} </p>
             <div className="TransactionInfo">
               <p> Variação nos últimos 7 dias </p>
-              <p className="Info"> {props.currency.percent_change_7d}% </p>
+              <p className={`Info ${Number(props.currency.percent_change_7d) < 0 ? 'Negative' : 'Positive'}`}>
+                {props.currency.percent_change_7d}%
+              </p>
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@ export const CurrencyCard = (props) => (
 
     {!props.currency && 
       <div className="CurrencyEmptyState">
-        <h1>Pesquise uma criptomoeda</h1>
+        <h1 className="EmptyStateHeader">Pesquise uma criptomoeda</h1>
       </div>
     }
     

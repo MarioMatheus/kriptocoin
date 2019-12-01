@@ -1,15 +1,19 @@
 .App {
   text-align: center;
+  /* height: 100vh; */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 8vh;
+  background-color: #5930AF;
+  box-shadow: 0 0 4px #000;
+  -webkit-box-shadow: 0 0 4px #000;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-weight: bold;
   color: white;
 }
 
@@ -18,17 +22,21 @@
 }
 
 .App-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .BiggestList {
-  width: 25%;
-  margin-left: 64px;
+  width: 26%;
+  margin-top: 2px;
+  box-shadow: 0 0 4px #000;
+  -webkit-box-shadow: 0 0 4px #000;
 }
 
 .CurrencySearch {
   width: 60%;
+  /* margin-left: 42px; */
+  margin: auto;
 }

@@ -1,28 +1,40 @@
 .CurrencyCardContainer {
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px #000;
   height: 72vh;
   margin-top: 24px;
   padding: 10px;
+  background-color: #151A52;
 }
 
 .CurrencyInfoContainer {
   margin-top: 42px;
   margin-left: 12px;
+  color: white;
 }
 
 .CurrencyInfoBodyContainer {
   width: 100%;
-  margin-top: 42px;
+  margin-top: 50pt;
   display: flex;
   align-content: center;
   justify-content: space-around;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .CurrencyInfoBodyContainer .Info {
-  color: darkslategray;
+  color: lightgrey;
   font-style: italic;
+}
+
+.CurrencyInfoBodyContainer .Negative {
+  color: lightcoral;
+}
+
+.CurrencyInfoBodyContainer .Positive {
+  color: lightseagreen;
 }
 
 .CurrencyInfoName {
@@ -37,11 +49,11 @@
 }
 
 .CurrencyInfoPrice .TransactionInfo {
-  margin-top: 64px;
+  margin-top: 100pt;
 }
 
 .CurrencyInfoTransaction .TransactionInfo {
-  margin-top: 64px;
+  margin-top: 100pt;
 }
 
 .CurrencyInfoTransaction {
@@ -49,5 +61,7 @@
 }
 
 .CurrencyEmptyState {
-  
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
 }

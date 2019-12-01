@@ -1,24 +1,23 @@
 .SearchInputContainer {
   width: 95%;
-  height: 24px;
+  margin: auto;
+  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 24px;
 }
 
 .SearchTextInput {
   border-radius: 4px;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 100%;
+  width: 70%;
   height: 100%;
   font-size: 0.9em;
 }
 
 .SearchButton {
   height: 100%;
+  width: 20%;
   border-radius: 4px;
-  margin-right: 8px;
   font-size: 0.9em;
 }

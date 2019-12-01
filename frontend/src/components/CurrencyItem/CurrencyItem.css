@@ -1,7 +1,10 @@
 .Container {
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 2px #d8d8d8;
+  box-shadow: 0 0 4px #000;
+  -webkit-box-shadow: 0 0 4px #000;
   padding: 1px;
+  background-color: #F7F4FC;
+  color: darkslategrey;
 }
 
 .RowContent {
@@ -33,12 +36,12 @@
 
 .RowContent .Price {
   font-size: 1em;
-  color: gray;
+  color: darkolivegreen;
 }
 
 .RowContent .Rank {
   font-size: 1em;
-  color: gray;
+  color: darkmagenta;
   font-style: italic;
 }
 

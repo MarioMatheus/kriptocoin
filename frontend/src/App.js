@@ -12,7 +12,6 @@ function App() {
       </header>
       <article className="App-container">
         <section className="BiggestList">
-          <h3>Top 10</h3>
           <CurrencyList />
         </section>
         <section className="CurrencySearch">
