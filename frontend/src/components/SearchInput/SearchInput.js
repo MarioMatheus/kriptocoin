@@ -31,7 +31,7 @@ export default class SearchInput extends Component {
 
   render() {
     return (
-      <div>
+      <div className="SearchInputContainer">
 
         <input
           className="SearchTextInput"

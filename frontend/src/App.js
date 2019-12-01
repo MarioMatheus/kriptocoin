@@ -10,13 +10,15 @@ function App() {
       <header className="App-header">
           Kriptocoin
       </header>
-      <section className="BiggestList">
-        <h3>Top 10</h3>
-        <CurrencyList />
-      </section>
-      <section>
-        <CurrencySearch />
-      </section>
+      <article className="App-container">
+        <section className="BiggestList">
+          <h3>Top 10</h3>
+          <CurrencyList />
+        </section>
+        <section className="CurrencySearch">
+          <CurrencySearch />
+        </section>
+      </article>
     </div>
   );
 }

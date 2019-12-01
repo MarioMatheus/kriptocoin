@@ -38,8 +38,8 @@ export default class CurrencySearch extends Component {
   render() {
     return (
       <div>
-        <SearchInput onSearch={this.handleSearch} />
-        <CurrencyCard currency={this.state.cryptocurrency} />
+        <SearchInput className="SearchInput" onSearch={this.handleSearch} />
+        <CurrencyCard className="CurrencySearchCard" currency={this.state.cryptocurrency} />
       </div>
     )
   }
