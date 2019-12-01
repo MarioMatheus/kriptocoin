@@ -1,5 +1,5 @@
 .CurrencyListContainer {
-  height: 100%;
+  height: inherit;
   overflow-y: auto;
   padding: 25px;
   background-color: #5930AF;

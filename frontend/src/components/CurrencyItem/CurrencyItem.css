@@ -5,6 +5,7 @@
   padding: 1px;
   background-color: #F7F4FC;
   color: darkslategrey;
+  min-width: 280px;
 }
 
 .RowContent {

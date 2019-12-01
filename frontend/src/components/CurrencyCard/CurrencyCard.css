@@ -2,7 +2,9 @@
   border-radius: 12px;
   box-shadow: 0 0 10px #000;
   -webkit-box-shadow: 0 0 10px #000;
-  height: 72vh;
+  /* height: 72vh; */
+  overflow-y: auto;
+  min-height: 550px;
   margin-top: 24px;
   padding: 10px;
   background-color: #151A52;
@@ -18,6 +20,7 @@
   width: 100%;
   margin-top: 50pt;
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
   font-size: 1.5em;
@@ -49,11 +52,11 @@
 }
 
 .CurrencyInfoPrice .TransactionInfo {
-  margin-top: 100pt;
+  margin-top: 90pt;
 }
 
 .CurrencyInfoTransaction .TransactionInfo {
-  margin-top: 100pt;
+  margin-top: 90pt;
 }
 
 .CurrencyInfoTransaction {

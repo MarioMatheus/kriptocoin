@@ -9,6 +9,7 @@
   -webkit-box-shadow: 0 0 4px #000;
   height: 8vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -24,19 +25,30 @@
 .App-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
 .BiggestList {
-  width: 26%;
-  margin-top: 2px;
+  min-width: 350px;
+  width: 25%;
+  height: 100%;
+  margin-top: 3px;
   box-shadow: 0 0 4px #000;
   -webkit-box-shadow: 0 0 4px #000;
 }
 
 .CurrencySearch {
-  width: 60%;
+  width: 95%;
+  max-width: 850px;
+  height: 100%;
   /* margin-left: 42px; */
   margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .BiggestList {
+    width: 100%;
+  }
 }
