@@ -10,7 +10,7 @@ export const CurrencyItem = (props) => (
     </section>
     <section className="RowContent">
       <div className="Price">$ {props.currency.price_usd} </div>
-      <div className="Rank"> #{props.currency.rank} </div>
+      <div className="Rank"> #{props.rank} </div>
     </section>
   </article>
 )

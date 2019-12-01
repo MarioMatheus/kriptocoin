@@ -23,5 +23,5 @@ class Service:
 
     def get_biggest_cryptocurrencies(self):
         cryptocurrencies = self.request_cryptocurrencies()
-        currencies_sorted = sorted(cryptocurrencies, key=lambda c: int(c['rank']))
+        currencies_sorted = sorted(cryptocurrencies, key=lambda c: float(c['price_usd']), reverse=True)
         return list(currencies_sorted)[:10]
