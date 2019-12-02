@@ -9,9 +9,14 @@ export default class CurrencyList extends Component {
   constructor(props) {
     super(props)
     this.state = { currencies: [] }
+    this.handleReloadButton = this.handleReloadButton.bind(this)
   }
 
   componentDidMount() {
+    this.fetchBiggestCryptocurrencies()
+  }
+
+  handleReloadButton() {
     this.fetchBiggestCryptocurrencies()
   }
 
@@ -30,6 +35,12 @@ export default class CurrencyList extends Component {
     const currencies = this.state.currencies
     return (
       <div className="CurrencyListContainer">
+        <div className="CurrencyListHeader">
+          <p>Top 10 Criptomoedas</p>
+          <button className="ReloadButton" onClick={this.handleReloadButton}>
+            <img src={process.env.PUBLIC_URL + '/reload-icon.png'} alt="Reload"></img>
+          </button>
+        </div>
         {currencies.map((c, i) => (
           <div className="Item" key={c.id} >
             <CurrencyItem currency={c} rank={i+1} />

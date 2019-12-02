@@ -1,11 +1,38 @@
 .CurrencyListContainer {
   height: inherit;
   overflow-y: auto;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   background-color: #5930AF;
 }
 
 .Item {
   margin-top: 3px;
   margin-bottom: 3px;
+}
+
+.CurrencyListHeader {
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ReloadButton {
+  border: none;
+  background: none;
+}
+
+.ReloadButton img {
+  height: 20pt;
+  width: 20pt;
+}
+
+.ReloadButton img:active {
+  height: 10pt;
+  width: 10pt;
 }
