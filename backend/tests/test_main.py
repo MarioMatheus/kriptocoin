@@ -40,10 +40,11 @@ def test_service_available():
 
     def test_list_of_biggests_success_call():
         response = client.get('/listar-maiores')
-        assert response.status_code == 200
         currencies = response.json()
+        currencies_prices = list(map(lambda c: float(c['price_usd']), currencies))
+        assert response.status_code == 200
         assert len(currencies) == 10
-        assert list(map(lambda c: c['rank'], currencies)) == ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+        assert currencies_prices == sorted(currencies_prices, reverse=True)
     
     test_search_cryptocurrency_correct_code()
     test_search_cryptocurrency_incorrect_code()

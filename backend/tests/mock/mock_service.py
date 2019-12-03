@@ -12,7 +12,7 @@ class MockedService:
         return list(currencies_filtered)
 
     def get_biggest_cryptocurrencies(self):
-        currencies_sorted = sorted(self.mock_data, key=lambda c: int(c['rank']))
+        currencies_sorted = sorted(self.mock_data, key=lambda c: float(c['price_usd']), reverse=True)
         return list(currencies_sorted)[:10]
 
 
