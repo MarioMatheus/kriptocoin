@@ -2,7 +2,7 @@ FROM node:12.2.0-alpine
 
 WORKDIR /app
 
-EXPOSE 3000
+EXPOSE 8081
 
 ADD . /app
 RUN npm install --silent

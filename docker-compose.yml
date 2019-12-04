@@ -5,13 +5,13 @@ services:
     build: ./backend
     container_name: backend
     ports:
-      - 3001:80
+      - 3001:3001
 
   frontend:
     build: ./frontend
     container_name: frontend
     ports:
-      - 8081:3000
+      - 8081:8081
     links:
       - backend
 
