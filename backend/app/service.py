@@ -8,7 +8,7 @@ class ServiceUnavailable(Exception):
 class Service:
     def request_cryptocurrencies(self):
         try:
-            response = requests.get('https://api.coinmarketcap.com/v1/ticker/')
+            response = requests.get('https://api.coinmarketcap.com/v1/ticker/', timeout=10)
             if response.status_code == 200:
                 return response.json()
         except:
