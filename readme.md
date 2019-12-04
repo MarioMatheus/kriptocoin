@@ -10,6 +10,7 @@ The project consists of two parts, a python server using the fastapi framework a
 
 ## Requirements
 - Docker Compose
+- pytest (To run backend tests)
 
 ## How to run
 Clone the project and execute docker-compose command:
@@ -17,4 +18,10 @@ Clone the project and execute docker-compose command:
 docker-compose up
 ```
 Open browser on [http://localhost:8081](http://localhost:8081)
+
+## How to run backend tests
+Enter `backend` folder and run command:
+```sh
+pytest
+```
 
